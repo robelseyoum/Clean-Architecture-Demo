@@ -25,7 +25,6 @@ class CalculatorActivity : AppCompatActivity() {
         var fragmentTransaction = fragmentManager.findFragmentByTag(VIEW) as CalculatorFragment?
             ?: CalculatorFragment.newInstance(Injector(this))
 
-
         //fragmentTransaction.add(R.id.fragment_container_from_main, CalculatorFragment()).commit()
         fragmentManager.beginTransaction().replace(R.id.fragment_container_from_main, fragmentTransaction).commit()
     }

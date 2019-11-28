@@ -79,7 +79,7 @@ class CalculatorFragment : Fragment(), IViewContract.View, View.OnClickListener,
     }
 
 
-    private fun setPresenter(injector: Injector):Fragment{
+    private fun setPresenter(injector: Injector):Fragment {
         presenter = injector.providePresenter(this)
         return this
     }
